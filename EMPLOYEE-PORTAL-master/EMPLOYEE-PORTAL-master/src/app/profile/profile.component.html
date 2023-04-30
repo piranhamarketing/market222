@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class='main-container'>
+
+        <div class='container'>
+
+            <div class='left-sidebar'>
+                <h2>Dashboard</h2>
+                  <div>
+                    <a class='left-sidebar-links' href='http://localhost:4200/PROFILE'>PROFILE</a>
+
+                  </div>
+                <div>
+  <a class='left-sidebar-links' href='http://localhost:4200/payslip'>PAYSLIP</a>
+
+                </div>
+                  <div>
+                    <a class='left-sidebar-links' href='http://localhost:4200/empleave'>EMPLOYEE-LEAVE</a>
+                </div>
+<!--                 
+                <div>
+                    <a class='left-sidebar-links' href='http://localhost:4200/pdf'>PAYSLIP-PDF</a>
+                </div> -->
+
+
+            </div>
+            
+
+            <div class='dashboard'>
+                <div class="dropdown" style="float:right;">
+                    <div class="dropdown-content">
+                      <button (click)="shutdown()">LOGOUT👋</button>
+                    </div>
+                  </div>
+                <H2 align="center">EMPLOYEE PORTAL-PROFILE</H2>
+               
+
+                <div class="time">
+                    <mat-card class="matcard">
+                        <mat-card-content>TIME:{{time}}</mat-card-content>
+                      </mat-card>
+                </div>
+               
+
+              
+
+                <div class="rightbar">
+                    
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status" >
+                          <span class="sr-only" id="loading"></span>
+                        </div>
+                      </div>
+                    <table>
+                        <tr>
+                            <td>CUSTOMERID</td>
+                            <td>{{empid | number}}</td>
+                        </tr>
+                        <tr>
+                            <td>FIRST NAME</td>
+                            <td>{{name}}</td>
+                        </tr>
+                        <tr>
+                            <td>LAST NAME</td>
+                            <td>{{name2}}</td>
+                        </tr>
+                        <tr>
+                            <td>DATE OF BIRTH</td>
+                            <td>{{dob | date}}</td>
+                        </tr>
+                        <tr>
+                            <td>STREET</td>
+                            <td>{{street}}</td>
+                        </tr>
+                        <tr>
+                            <td>CITY</td>
+                            <td>{{city}}</td>
+                        </tr>
+                        <tr>
+                            <td>POSTAL CODE</td>
+                            <td>{{postcode }}</td>
+                        </tr>
+                        <tr>
+                            <td>TELEPHONE NUMBER</td>
+                            <td>{{telenum}}</td>
+                        </tr>
+                        <tr>
+                            <td>COUNTRY</td>
+                            <td>{{country}}</td>
+                        </tr>
+                        <tr>
+                            <td>ROLE</td>
+                            <td>{{role}}</td>
+                        </tr>
+                        <tr>
+                            <td>PRACTICE</td>
+                            <td>{{practice}}</td>
+                        </tr>
+                        <tr>
+                            <td>POSITION</td>
+                            <td>{{position}}</td>
+                        </tr>
+                       </table>
+                    
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>

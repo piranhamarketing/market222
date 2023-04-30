@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class='main-container'>
+
+        <div class='container'>
+
+            <div class='left-sidebar'>
+                <h2>Dashboard</h2>
+                  <div>
+                    <a class='left-sidebar-links' href='http://localhost:4200/empleave'>EMPLOYEE-LEAVE</a>
+
+                  </div>
+                <div>
+  <a class='left-sidebar-links' href='http://localhost:4200/profile'>PROFILE</a>
+
+                </div>
+                  <div>
+                    <a class='left-sidebar-links' href='http://localhost:4200/payslip'>PAYSLIP</a>
+                </div>
+                
+                <!-- <div>
+                    <a class='left-sidebar-links' href='http://localhost:4200/pdf'>PAYSLIP-PDF</a>
+                </div> -->
+
+
+            </div>
+
+            <div class='dashboard'>
+                <div class="dropdown" style="float:right;">
+                    <div class="dropdown-content">
+                      <button (click)="shutdown()">LOGOUT👋</button>
+                    </div>
+                  </div>
+                <H2 align="center">EMPLOYEE PORTAL- EMPLOYEE-LEAVE</H2>
+                
+               
+
+              
+
+                <div class="rightbar">
+
+    
+                    <div class="time">
+                        <mat-card class="matcard">
+                            <mat-card-content>TIME:{{time}}</mat-card-content>
+                          </mat-card>
+                    </div>
+                    <br>
+                    
+    
+                    <div class="filter">
+                    <input type="text" class="form-control" placeholder="Filter by Abscence Type" [(ngModel)]="filterdata" />
+                   
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status" >
+                      <span class="sr-only" id="loading"></span>
+                    </div>
+                  </div>
+                    <table>
+                        
+                        <th>Absence Days</th>
+                        <th> Absence Hours </th>
+                        <th>Abscence Type  </th>
+                        <th>Name Of Absence Type</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        
+
+                    <tr style="height:200px" *ngFor="let entries of this.items | filterpipe:filterdata ">
+
+                        <td><h4>{{entries.ABSENCEDAYS | number}}</h4></td>
+                        <td><h4>{{entries.ABSENCEHOURS | number}}</h4></td>
+                        <td><h4>{{entries.ABSENCETYPE }}</h4></td>
+                        <td><h4>{{entries.NAMEOFABSENCETYPE}}</h4></td>
+                        <td><h4>{{entries.VALIDBEGIN |  date: 'dd/MM/yyyy'}}</h4></td>
+                        <td><h4>{{entries.VALIDEND | date: 'dd/MM/yyyy'}}</h4></td>
+                        
+                    </tr>
+                </table>
+            
+
+             
+                    
+                    
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>

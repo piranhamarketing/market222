@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*
+{
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(to left,rgb(250, 252, 255),rgb(255, 246, 246),rgb(245, 251, 255),rgb(255, 244, 251));
+    
+}
+.WEL
+{
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Poppins";
+}
+.container,.left-sidebar,.left-sidebar div,.box-container,.box,.box-row,.buttons-container{
+    display: flex;
+}
+
+.container,.left-sidebar div,.box-container,.box-row,.buttons-container{
+    flex-direction: row;
+}
+
+.top-left-sidebar-link,.left-sidebar div:nth-child(2) ion-icon,.buttons,.search-icon{
+    color:white;
+}
+
+.left-sidebar-links,.left-sidebar-links,ion-icon{
+    color:rgb(4, 14, 84);
+}
+
+.top-bar,.box{
+    background-color: cadetblue;
+}
+
+.top-bar{
+    margin: -1px 0px 0px -22px;
+    width: 106.9%;
+    height: 5rem;
+   
+    box-shadow: .2px .2px 10px .2px white;
+    
+    border-top-right-radius:8px ;
+}
+
+.box,.left-sidebar{
+    flex-direction: column;
+}
+
+.container{
+    justify-content: center;
+}
+
+.left-sidebar,.dashboard{
+   
+    margin: 20px 0px 0px 0px;
+    padding:0px 0px 0px 22px;
+}
+
+.left-sidebar{
+    box-shadow: .2px .2px 3px .2px rgb(157, 157, 157);
+    padding:0px 0px 0px 22px;
+    height: 42.8rem;
+    width: 16rem;
+    gap: 52px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-image: url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?w=996&t=st=1675172336~exp=1675172936~hmac=a1ad8880cfc75fd0af69ab8e46b29021dc7fa6ab92a3c27b5e9d6efd22e1fbe6);
+    
+}
+
+.dashboard{
+    border:2px solid transparent;
+    
+    height: 100;
+    width: 90%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.left-sidebar h2{
+    border-top-left-radius: 8px;
+    
+    padding: 13px 2px 17px 22px;
+    margin: 0px 0px 0px -22px;
+    letter-spacing: -2px;
+    border-radius: none;
+    background-color:#0C7ECF;
+}
+
+.dashboard h2{
+    padding: 12.5px 0px 17px 25px;
+    margin: 0px 0px 0px -21px;
+    letter-spacing: 2px;
+    border-radius: none;
+    
+    background-color: #0C7ECF;
+}
+
+.left-sidebar div{
+    gap:50px;
+    width: 80%;
+    padding:6px 12px 10px 31px;
+    margin: -20px 0px 0px -9px;
+    box-shadow: .2px .2px 3px .2px rgb(218, 217, 217);
+    border-radius: 2px;
+    
+}
+
+ion-icon{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+.left-sidebar-links{
+    letter-spacing: 1px;
+    margin: 4px 0px 0px -3px;
+    font-family: 'Poppins';
+}
+
+.box-container{
+    gap:18px;
+}
+
+.box{
+    width: 17.5rem;
+    height: 12rem;
+    border:1px solid whitesmoke;
+    box-shadow: .2px .2px 2px .2px lightgray;
+    padding:22px 2px 2px 2px;
+}
+
+.line{
+    margin: 0px 0px 0px -3px;
+    width: 102%;
+    height: .2rem;
+    background:linear-gradient(to left,rgb(137, 133, 248),rgb(137, 137, 255)) ;
+    box-shadow: .2px .2px 3px .2px rgb(214, 214, 214);
+}
+
+.box-row{
+    gap:20px;
+}
+
+img{
+    padding:0px 2px 2px 22px;
+    width: 2.7rem;
+    height: auto;
+}
+
+p{
+    margin: 9px 0px 0px 20px;
+    font-family: 'Poppins';
+}
+
+.buttons-container{
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+    gap:50px;
+}
+
+.buttons{
+    box-shadow: .2px .2px 4px .2px rgb(59, 52, 255);
+    background:linear-gradient(to left,rgb(76, 70, 253),rgb(64, 64, 250)) ;
+    padding:4px 22px 4px 22px;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-size: 15.7px;
+    letter-spacing: 1px;
+}
+
+.buttons:hover{
+    background: none;
+    color:black;
+    transition: .3s;
+    box-shadow: .2px .2px 4px .2px lightgray;
+}
+
+input{
+    width: 65%;
+    height: 2rem;
+    box-shadow: .2px .2px 4px .2px rgb(226, 226, 226);
+    border:none;
+    padding:6px 2px 6px 2px;
+    margin:0px 0px 0px 30px;
+    outline: none;
+}
+
+input::placeholder{
+    font-family: 'Poppins';
+    padding: 0px 0px 0px 12px;
+    letter-spacing: 1px;
+    color:rgb(96, 96, 96);
+}
+
+.search-icon{
+    position: relative;
+    top:6px;
+    left:-35px;
+    font-size: 18px;
+    padding:2.5px 3px 2px 4px;
+    border-radius: 200px;
+    background:rgb(50, 43, 255);
+    box-shadow: .2px .2px 2px .2px rgb(96, 96, 96);
+}
+
+.search-icon:hover{
+    cursor: pointer;
+    color:rgb(50, 43, 255);
+    background: none;
+    transition: .3s;
+}
+
+.left-sidebar div:nth-child(2){
+    background:linear-gradient(to left,rgb(76, 70, 253),rgb(64, 64, 250)) ;
+    margin: -20px 0px 0px 5px;
+    padding:10px 2px 10px 22px ;
+    box-shadow: .2px .2px 2px .2px rgb(50, 43, 255);
+}
+
+.top-left-sidebar-link{
+    margin: 2px 0px 0px 10px;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 1.5rem;
+    margin-top: 6px;
+    
+    height: 20%;
+    size: 10rem;
+  }
+
+  th{
+    background-color: #019CE0;
+  }
+  
+
+
+  td{
+
+    background-color: rgb(245, 247, 249);
+  }
+  
+  td:hover 
+  {
+    background-color:	#A9B2C3;
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+}
+
+  .time
+  {
+      margin-top: 0.5rem;
+      margin-left:40rem;
+  }
+
+  .shutdown
+  {
+    margin-left:68rem;
+    align-content: right;
+  }
+
+  .log {
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(104, 85, 224, 1);
+    margin-top: 5px;
+    align-items: right;
+  }
+
+  button:hover {
+    color: white;
+    width: 150px;;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
+  }
+
+  td{
+    text-align: center;
+  }
+
+  .matcard
+  {
+    background-color:#019CE0;
+    
+  }
+
+  .dashboard,.shutdown,.time,.rightbar{
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63452.jpg?w=1380&t=st=1675173247~exp=1675173847~hmac=9cc566e9a33efea7b0c4fb8ba7fa05d48c17aed75efcc194db84cdaf3f6fe0d1);
+    background-size: cover;
+    background-color: #CEC8EF;
+
+  }
+
+  
+  .dashboard,.shutdown,.time,.rightbar{
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63452.jpg?w=1380&t=st=1675173247~exp=1675173847~hmac=9cc566e9a33efea7b0c4fb8ba7fa05d48c17aed75efcc194db84cdaf3f6fe0d1);
+    background-size: cover;
+
+  }
+
+  .dropdown-content button
+  {
+    margin-top: 38px;
+    margin-right: 5px;
+    background-color: #0C7ECF;
+  }
+   
+  .dropdown-content button:hover
+  {
+    background-color: #0C7ECF;
+    transform:scale(1.2);
+   
+  }
+  #loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+
+
+
+
+
+
+
+
